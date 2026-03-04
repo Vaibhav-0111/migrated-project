@@ -1,0 +1,1121 @@
+================================================================================
+                        CALM QUEST — COMPLETE GAME GUIDE
+                      For Students, Teachers & Stakeholders
+================================================================================
+
+Version: 1.1
+Last Updated: March 2026
+Platform: Web (Desktop & Mobile)
+Grades Supported: 11 & 12
+Subjects Covered: Mathematics (Trigonometry, Algebra, Volume & Surface Area,
+                  Probability, Fractions/Decimals/Percentages/Interest)
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+
+  1. Platform Overview
+  2. How the Learning System Works
+  3. Chapter 1 — Trigonometry (3 Games)
+  4. Chapter 2 — Algebra (3 Games)
+  5. Chapter 3 — Volume & Surface Area (3 Games)
+  6. Chapter 4 — Probability (3 Games)
+  7. Chapter 5 — Fractions, Decimals, Percentages & Interest (3 Games)
+  8. Assessment System (AI-Generated Quizzes)
+  9. Gamification & Rewards
+  10. Accessibility & ADHD-Friendly Design
+  11. Technical Features (LeetCode-Style)
+
+================================================================================
+1. PLATFORM OVERVIEW
+================================================================================
+
+Calm Quest is an interactive 3D math learning platform designed specifically
+for students with ADHD and diverse learning needs. It transforms abstract
+mathematical concepts into hands-on, visual, and tactile 3D experiences.
+
+Key Philosophy: "Intuition before math"
+→ Students FEEL the math through physical interaction BEFORE encountering
+  formulas or symbolic notation.
+
+Each chapter follows a strict 3-game structure:
+  • Game 1 — Easy (Introductory concept)
+  • Game 2 — Medium (Deeper application)
+  • Game 3 — Advanced (Real-world or complex scenario)
+
+Every game follows this flow:
+  Tutorial → 3D Animation → Interactive Play → Step-by-Step Help → Quiz
+
+================================================================================
+2. HOW THE LEARNING SYSTEM WORKS
+================================================================================
+
+Step 1: TUTORIAL
+  A friendly explanation introduces the topic in plain English.
+  No formulas yet — just the core idea.
+
+Step 2: 3D ANIMATION
+  A short animated scene demonstrates the concept visually.
+  Example: A shadow growing/shrinking as the sun moves.
+
+Step 3: INTERACTIVE PLAY
+  The student takes control. They drag sliders, click objects, adjust
+  parameters, and see real-time visual feedback in a 3D scene.
+
+Step 4: STEP-BY-STEP HELPER
+  If stuck, a guided walkthrough breaks the problem into small steps.
+  Each step has a hint and visual cue.
+
+Step 5: AI-GENERATED QUIZ (8 Questions)
+  After completing the game, an 8-question quiz tests comprehension.
+  Questions are AI-generated, grade-specific (Grade 11 or 12), and
+  written in plain, human-readable English.
+  Fallback: Curated static questions if AI is unavailable.
+
+================================================================================
+3. CHAPTER 1 — TRIGONOMETRY
+================================================================================
+
+The Trigonometry chapter teaches angles, sine/cosine relationships, and the
+Pythagorean identity through real-world scenarios.
+
+------------------------------------------------------------------------------
+GAME 1: Shadow Garden Challenge (Easy)
+Route: /game/angle-shadow-garden
+Topic: Angles & Shadow Length
+------------------------------------------------------------------------------
+
+WHY SHADOWS?
+  Shadows are the most natural, everyday example of trigonometry. Every
+  student has noticed that shadows change length during the day. This game
+  connects that everyday observation to the mathematical relationship:
+  shadow length = object height × tan(angle).
+
+WHAT HAPPENS:
+  A 3D garden scene contains a tree and a bench. The sun floats in the sky.
+  The student adjusts the sun's angle using a slider. As the angle changes,
+  the tree's shadow stretches or shrinks in real-time.
+
+HOW TO PLAY:
+  1. Read the tutorial explaining how sun angle affects shadow length
+  2. Watch the animation showing the shadow changing
+  3. Use the slider to adjust the sun angle
+  4. Goal: Position the sun so the shadow perfectly covers the bench
+  5. Target angle: ~60 degrees (tolerance: ±3°)
+  6. After success, complete the 8-question quiz
+
+WHAT IT TEACHES:
+  • The relationship between angle and shadow length
+  • tan(angle) = opposite/adjacent (shadow length / tree height)
+  • Why shadows are short at noon (high angle) and long at sunset (low angle)
+  • Practical trigonometry without memorizing formulas first
+
+MATHEMATICAL CONNECTION:
+  tan(θ) = opposite / adjacent
+  Shadow length = Height / tan(θ)
+
+------------------------------------------------------------------------------
+GAME 2: Mountain Rope Rescue (Medium)
+Route: /game/mountain-rope-rescue
+Topic: Sine Function & Right Triangles
+------------------------------------------------------------------------------
+
+WHY A RESCUE MISSION?
+  The sine function describes the relationship between an angle and the
+  ratio of the opposite side to the hypotenuse. A rescue scenario makes
+  this vivid: the drone angle determines how much rope you need to reach
+  the stranded climber. Too steep = not enough rope. Too shallow = rope
+  doesn't reach. There's a perfect angle — and that's sine in action.
+
+WHAT HAPPENS:
+  A 3D mountain scene with a cliff, a stranded climber, and a rescue drone.
+  The drone hovers at a variable angle. A rope extends from the drone
+  toward the climber. The student adjusts the drone angle to find the
+  exact position where the rope reaches the climber.
+
+HOW TO PLAY:
+  1. Tutorial explains sine = opposite / hypotenuse
+  2. Watch the animated rescue attempt
+  3. Drag the slider to adjust the drone's angle
+  4. The rope length changes based on sin(angle)
+  5. Target angle: ~55 degrees (tolerance: ±4°)
+  6. Complete the 8-question quiz on sine calculations
+
+WHAT IT TEACHES:
+  • sin(θ) = opposite / hypotenuse
+  • How changing an angle affects the "reach" of the hypotenuse
+  • Real-world applications of sine (engineering, rescue, navigation)
+
+MATHEMATICAL CONNECTION:
+  sin(θ) = Height / Rope Length
+  Rope Length = Height / sin(θ)
+
+------------------------------------------------------------------------------
+GAME 3: Wave Balance Lab (Advanced)
+Route: /game/wave-balance-lab
+Topic: Pythagorean Identity (sin²θ + cos²θ = 1)
+------------------------------------------------------------------------------
+
+WHY WAVES?
+  The Pythagorean identity is one of the most elegant truths in
+  trigonometry, but it's abstract. By visualizing sin²θ and cos²θ as
+  two energy waves that always sum to 100%, students physically
+  experience conservation — as one wave grows, the other shrinks,
+  but together they're always complete.
+
+WHAT HAPPENS:
+  Two glowing energy bars represent sin²θ and cos²θ. As the student
+  adjusts the angle θ, one bar grows while the other shrinks. A total
+  energy meter always reads 100% (or 1.0). The challenge: find the
+  angle where both bars are exactly equal (45°).
+
+HOW TO PLAY:
+  1. Tutorial explains sin²θ + cos²θ = 1
+  2. Watch the animated energy transfer between the two waves
+  3. Adjust θ with the slider
+  4. Watch sin² and cos² values update in real-time
+  5. Goal: Find the angle where sin²θ = cos²θ = 0.5 (answer: 45°)
+  6. Complete the quiz on the Pythagorean identity
+
+WHAT IT TEACHES:
+  • sin²θ + cos²θ = 1 (always, for any angle)
+  • At 45°, sin and cos are equal
+  • Energy conservation as a metaphor for mathematical identity
+  • The unit circle relationship
+
+MATHEMATICAL CONNECTION:
+  sin²(45°) = 0.5
+  cos²(45°) = 0.5
+  sin²θ + cos²θ = 1 (for all θ)
+
+================================================================================
+4. CHAPTER 2 — ALGEBRA
+================================================================================
+
+The Algebra chapter teaches equation solving, algebraic manipulation, and
+pattern recognition through physical, tactile 3D interactions.
+
+------------------------------------------------------------------------------
+GAME 1: Balance Garden (Easy)
+Route: /game/balance-garden
+Topic: Solving Linear Equations (Balancing)
+------------------------------------------------------------------------------
+
+WHY A GARDEN BALANCE?
+  An equation is fundamentally about balance — the left side equals the
+  right side. A physical balance/scale is the perfect metaphor. Students
+  add and remove "weights" from both sides, experiencing that whatever
+  you do to one side, you MUST do to the other. This builds algebraic
+  intuition before symbolic manipulation.
+
+WHAT HAPPENS:
+  A 3D balance scale with blocks on both sides. One side has a glowing
+  "mystery box" (the variable x) plus some number blocks. The other side
+  has only number blocks. The student removes blocks from both sides
+  equally until only the mystery box remains — revealing its value.
+
+HOW TO PLAY:
+  1. Tutorial: "An equation is like a balance scale"
+  2. See the equation displayed: e.g., x + 2 = 5
+  3. Progressive rounds with increasing difficulty:
+     Round 1: x + 2 = 5 (remove 2 from both sides → x = 3)
+     Round 2: 2x = 6 (split both sides by 2 → x = 3)
+     Round 3: x + 4 = 9 (remove 4 → x = 5)
+     Round 4: 3x + 1 = 10 (remove 1, then divide by 3 → x = 3)
+  4. Click "Remove from both sides" or "Divide both sides"
+  5. Complete quiz after all 4 rounds
+
+WHAT IT TEACHES:
+  • Equations mean "both sides are equal"
+  • To solve: isolate the variable by doing the same thing to both sides
+  • Addition/subtraction and multiplication/division as inverse operations
+
+MATHEMATICAL CONNECTION:
+  x + a = b → x = b - a
+  ax = b → x = b / a
+
+------------------------------------------------------------------------------
+GAME 2: Equation Factory (Medium)
+Route: /game/equation-factory
+Topic: Multi-Step Equation Solving
+------------------------------------------------------------------------------
+
+WHY A FACTORY?
+  Factories process things step by step on conveyor belts. This is exactly
+  how multi-step equations work — you perform operations one at a time,
+  in the right order, to isolate the variable. The conveyor belt metaphor
+  makes the sequential nature of algebra visible and physical.
+
+WHAT HAPPENS:
+  A 3D factory with two conveyor belts separated by an equals sign. The
+  left belt carries a glowing purple variable cube (x) and blue constant
+  blocks. The right belt carries blue constant blocks. Two action buttons
+  let students manipulate both sides simultaneously:
+  • "➖ Remove 1 from both" — subtracts one constant block from each side
+  • "÷ Divide by [coefficient]" — divides the variable coefficient
+  A live equation display updates in real-time as operations are applied,
+  with dynamic step hints guiding the student through the process.
+
+HOW TO PLAY:
+  1. Tutorial: "Whatever you do to one belt, do to the other"
+  2. Round 1: x + 3 = 7 → Tap "Remove" 3 times → x = 4
+  3. Round 2: 2x + 4 = 10 → Remove 4, then divide by 2 → x = 3
+  4. Round 3: 3x + 2 = 11 → Remove 2, then divide by 3 → x = 3
+  5. Round 4: 4x + 5 = 17 → Remove 5, then divide by 4 → x = 3
+  6. Dynamic step hints: "Remove constants first" → "Now divide"
+  7. Tap "Check Solution" to verify — correct answers advance rounds
+  8. Step-by-Step Helper available via the help button (shows worked
+     example with current equation state)
+  9. Complete the 8-question quiz after all 4 rounds
+
+WHAT IT TEACHES:
+  • Order of operations in reverse (undo addition first, then division)
+  • Multi-step equation solving with progressive difficulty
+  • The golden rule: "Do the same thing to both sides"
+  • Strategic thinking: constants first, then coefficients
+  • Visual confirmation that the equation stays balanced throughout
+
+MATHEMATICAL CONNECTION:
+  ax + b = c
+  Step 1: ax = c - b (remove constant from both sides)
+  Step 2: x = (c - b) / a (divide both sides by coefficient)
+
+------------------------------------------------------------------------------
+GAME 3: Pattern Portal World (Advanced)
+Route: /game/pattern-portal
+Topic: Patterns, Sequences & Substitution
+------------------------------------------------------------------------------
+
+WHY PORTALS?
+  Patterns and sequences are about transformation — something goes in,
+  something comes out, following a hidden rule. Portals are the perfect
+  visual metaphor: objects enter a portal and emerge changed. The student
+  must discover the transformation rule and predict the next output.
+
+WHAT HAPPENS:
+  Floating portals in a mystical 3D space. Objects (colored spheres with
+  numbers) enter portals and emerge transformed. The student observes
+  the pattern (e.g., each number doubles: 1, 2, 4, 8) and selects the
+  correct sequence from available options.
+
+HOW TO PLAY:
+  1. Tutorial: "Portals follow hidden rules — discover them!"
+  2. Watch objects transform through the portal
+  3. Available numbers appear as clickable orbs
+  4. Select the correct sequence: 1, 2, 4, 8
+  5. Each correct selection lights up a portal
+  6. Complete the quiz on pattern recognition
+
+WHAT IT TEACHES:
+  • Recognizing mathematical patterns (geometric, arithmetic)
+  • Substitution: if f(x) = 2x, then f(1) = 2, f(2) = 4, etc.
+  • Predicting terms in a sequence
+  • The foundation of algebraic functions
+
+MATHEMATICAL CONNECTION:
+  Geometric sequence: aₙ = a₁ × rⁿ⁻¹
+  Example: 1, 2, 4, 8 → r = 2
+
+================================================================================
+5. CHAPTER 3 — VOLUME & SURFACE AREA
+================================================================================
+
+This chapter teaches 3D measurement through hands-on building, filling,
+and wrapping of virtual objects.
+
+------------------------------------------------------------------------------
+GAME 1: Shape Fill Playground (Easy)
+Route: /game/shape-fill-playground
+Topic: Volume of Basic 3D Shapes
+------------------------------------------------------------------------------
+
+WHY FILLING SHAPES?
+  Volume is "how much stuff fits inside." Rather than memorizing formulas,
+  students literally fill 3D shapes with virtual liquid and see how much
+  fits. The visceral experience of watching liquid rise inside a cube vs.
+  a cylinder vs. a sphere builds intuition about relative volumes.
+
+WHAT HAPPENS:
+  3D shapes (cube, cylinder, sphere) appear one at a time. A virtual tap
+  pours liquid into each shape. The student adjusts the fill level using
+  a slider. A meter shows the current fill percentage.
+
+HOW TO PLAY:
+  1. Tutorial: "Volume = how much fits inside"
+  2. Shape 1 (Cube): Fill to 70% — see how volume relates to side length
+  3. Shape 2 (Cylinder): Fill to 70% — compare πr²h to cube volume
+  4. Shape 3 (Sphere): Fill to 70% — see (4/3)πr³ in action
+  5. Complete all 3 shapes, then take the quiz
+
+WHAT IT TEACHES:
+  • Volume is a 3D measurement
+  • Different shapes with similar dimensions hold different amounts
+  • Cube: V = s³, Cylinder: V = πr²h, Sphere: V = (4/3)πr³
+
+------------------------------------------------------------------------------
+GAME 2: Wrap the Gift Studio (Medium)
+Route: /game/wrap-gift-studio
+Topic: Surface Area of 3D Shapes
+------------------------------------------------------------------------------
+
+WHY GIFT WRAPPING?
+  Surface area is "how much wrapping paper you need." This is the most
+  relatable real-world analogy. Students click on each face of a 3D
+  shape to "wrap" it, experiencing that surface area = sum of all faces.
+
+WHAT HAPPENS:
+  3D gift boxes (cube, rectangular prism, triangular prism) appear.
+  Each face is a clickable panel. The student clicks faces one by one
+  to cover them with wrapping paper. A progress meter tracks coverage.
+
+HOW TO PLAY:
+  1. Tutorial: "Surface area = total area of all faces"
+  2. Shape 1 (Cube): Click all 6 faces (each s² → total 6s²)
+  3. Shape 2 (Rectangular): Click all 6 faces (2lw + 2lh + 2wh)
+  4. Shape 3 (Triangular prism): Click 5 faces
+  5. Complete all shapes, then take the quiz
+
+WHAT IT TEACHES:
+  • Surface area = total area of all outer faces
+  • Cubes have 6 identical square faces
+  • Rectangular prisms have 3 pairs of identical rectangular faces
+  • The relationship between surface area and volume
+
+------------------------------------------------------------------------------
+GAME 3: Build & Balance City (Advanced)
+Route: /game/build-balance-city
+Topic: Volume vs. Surface Area Optimization
+------------------------------------------------------------------------------
+
+WHY CITY BUILDING?
+  Real architects and engineers must optimize: maximum interior space
+  (volume) with minimum materials (surface area). This game turns that
+  real-world challenge into a creative building experience.
+
+WHAT HAPPENS:
+  The student designs buildings by adjusting width, height, and depth
+  sliders. Volume and surface area meters update in real-time. Three
+  progressive goals challenge different optimization strategies.
+
+HOW TO PLAY:
+  1. Tutorial: "Volume = storage space, Surface area = building materials"
+  2. Goal 1 (Warehouse): Maximize volume ≥ 64 cubic units
+  3. Goal 2 (Efficient): Good volume with minimum surface area
+  4. Goal 3 (Balanced): Find the optimal ratio of volume to surface area
+  5. Adjust width, height, depth sliders for each goal
+  6. Complete the quiz
+
+WHAT IT TEACHES:
+  • A cube has the best volume-to-surface-area ratio among rectangular prisms
+  • Tall/thin shapes have high surface area relative to volume
+  • Optimization: balancing competing mathematical constraints
+  • Real-world engineering and architecture applications
+
+================================================================================
+6. CHAPTER 4 — PROBABILITY
+================================================================================
+
+The Probability chapter teaches chance, experimental vs. theoretical
+probability, and prediction through interactive experiments.
+
+------------------------------------------------------------------------------
+GAME 1: Chance Garden (Easy)
+Route: /game/chance-garden
+Topic: Basic Probability (Equally Likely Outcomes)
+------------------------------------------------------------------------------
+
+WHY A GARDEN?
+  A garden with colored flowers is a natural, calming way to introduce
+  probability. "If you randomly pick a flower, what color will it be?"
+  The visual ratio of flower colors makes probability intuitive — more
+  red flowers = higher chance of picking red.
+
+WHAT HAPPENS:
+  A 3D garden with colored flowers (baskets representing different
+  outcomes). The student picks a basket based on a probability prompt.
+  For example: "Which color has the best chance?" The correct answer
+  is the basket with the most flowers of that color.
+
+HOW TO PLAY:
+  1. Tutorial: "Probability = favorable outcomes / total outcomes"
+  2. 3 rounds of increasing difficulty
+  3. Each round: see colored baskets, read the question, pick the answer
+  4. Correct picks earn points; incorrect picks give encouragement
+  5. Complete 3 rounds, then take the quiz
+
+WHAT IT TEACHES:
+  • Probability ranges from 0 (impossible) to 1 (certain)
+  • P(event) = favorable outcomes / total outcomes
+  • More of something = higher probability of selecting it
+
+------------------------------------------------------------------------------
+GAME 2: Spinner & Dice Lab (Medium)
+Route: /game/spinner-dice-lab
+Topic: Experimental Probability
+------------------------------------------------------------------------------
+
+WHY SPINNERS AND DICE?
+  Spinners and dice are the classic probability tools. This game bridges
+  the gap between theoretical probability (what SHOULD happen) and
+  experimental probability (what ACTUALLY happens when you try).
+
+WHAT HAPPENS:
+  A 3D spinner wheel with colored segments and a die. The student spins
+  the wheel multiple times and records outcomes. A frequency table and
+  bar chart update in real-time. The student then predicts the next
+  outcome based on observed frequencies.
+
+HOW TO PLAY:
+  1. Tutorial: "Spin many times and see what happens!"
+  2. Click "Spin" to spin the wheel — watch it rotate and land
+  3. Results are tracked in a live frequency chart
+  4. After 10+ spins, predict which color will come up next
+  5. Compare experimental frequencies to theoretical probabilities
+  6. Complete the quiz
+
+WHAT IT TEACHES:
+  • Experimental probability approaches theoretical probability
+    with more trials (Law of Large Numbers)
+  • How to record and interpret frequency data
+  • That individual outcomes are unpredictable, but patterns emerge
+
+------------------------------------------------------------------------------
+GAME 3: Prediction Park (Advanced)
+Route: /game/prediction-park
+Topic: Experimental Probability & Data Analysis
+------------------------------------------------------------------------------
+
+WHY A PREDICTION PARK?
+  This game takes experimental probability further — students run
+  multiple dice-rolling experiments, collect frequency data as 3D bar
+  charts, and then predict outcomes. It connects experimental data
+  to theoretical probability through hands-on experimentation.
+
+WHAT HAPPENS:
+  A 3D park with a giant rolling die and result pillars that grow
+  based on frequency. The student rolls the die 10 times per round,
+  watches the frequency bars grow, then predicts which number was
+  rolled most frequently.
+
+HOW TO PLAY:
+  1. Tutorial: "Roll, observe, predict!"
+  2. Round 1: Roll 10 times → frequency bars grow → predict most common
+  3. Round 2: New experiment with fresh data
+  4. Round 3: Final prediction challenge
+  5. Compare predictions to actual data
+  6. Complete the quiz
+
+WHAT IT TEACHES:
+  • How to conduct probability experiments
+  • Reading and interpreting frequency distributions
+  • Making predictions from experimental data
+  • Why larger sample sizes give more reliable predictions
+
+================================================================================
+7. CHAPTER 5 — FRACTIONS, DECIMALS, PERCENTAGES & INTEREST
+================================================================================
+
+This chapter covers the interconnected world of fractions, decimals,
+percentages, and financial mathematics (simple & compound interest).
+
+------------------------------------------------------------------------------
+GAME 1: Share & Slice Café (Easy)
+Route: /game/share-slice-cafe
+Topic: Fractions Basics (Equal Sharing)
+------------------------------------------------------------------------------
+
+WHY A PIZZA CAFÉ?
+  Fractions are fundamentally about SHARING. Cutting a pizza into equal
+  slices is the most universally understood example. Students use a
+  tap-to-serve interaction — tap a slice to pick it up, then tap a
+  friend to deliver it — building fraction intuition through hands-on,
+  tactile gameplay rather than abstract sliders.
+
+WHAT HAPPENS:
+  A 3D pizza sits on a café counter with friends standing around it. Each
+  slice is individually selectable with a golden highlight on hover. The
+  student taps a slice (it lifts and highlights in gold), then taps a
+  friend to serve it to their plate. A bottom panel tracks per-person
+  slice counts and remaining slices in real-time. The round succeeds
+  only when ALL slices are distributed EQUALLY among all friends.
+
+HOW TO PLAY:
+  1. Tutorial: "Fractions = sharing equally"
+  2. Round 1 (Easy): 4 slices ÷ 2 friends → each gets 2 slices (½ each)
+  3. Round 2: 6 slices ÷ 3 friends → each gets 2 slices (⅓ each)
+  4. Round 3: 8 slices ÷ 4 friends → each gets 2 slices (¼ each)
+  5. Round 4 (Tricky): 6 slices ÷ 2 friends → each gets 3 slices
+  6. Tap a slice to select it (golden highlight), then tap a friend
+  7. Use "Undo Last Serve" button to take back the last action
+  8. Use "Start Over This Round" to reset the current round
+  9. Incorrect distribution shows an encouragement message
+  10. After all 4 rounds, complete the 8-question quiz
+
+WHAT IT TEACHES:
+  • A fraction represents a part of a whole
+  • Fair sharing means everyone gets the SAME number of slices
+  • 2/6 = 1/3 (simplifying fractions through equal sharing)
+  • Division as the basis of fractions: slices ÷ friends = slices per person
+  • Tactile learning: physical serve actions reinforce the concept of
+    distributing equally
+
+------------------------------------------------------------------------------
+GAME 2: Liquid Measure Lab (Medium)
+Route: /game/liquid-measure-lab
+Topic: Decimals & Conversions
+------------------------------------------------------------------------------
+
+WHY LIQUID MEASUREMENT?
+  Liquids naturally flow and divide — making them perfect for teaching
+  decimals. Pouring 0.75 liters is more intuitive when you SEE it as
+  three-quarters of a container. This game connects visual levels to
+  decimal notation.
+
+WHAT HAPPENS:
+  3D beakers and containers with measurement markings. The student pours
+  liquid between containers, reading decimal measurements. Challenges
+  involve converting between fractions and decimals using visual levels.
+
+HOW TO PLAY:
+  1. Tutorial: "Decimals are fractions in disguise!"
+  2. Pour liquid to a target level (e.g., 0.75 liters)
+  3. Convert: what fraction is 0.75? (answer: 3/4)
+  4. Multiple rounds with different target values
+  5. Complete the quiz
+
+WHAT IT TEACHES:
+  • Decimals represent parts of a whole (0.5 = half)
+  • Converting fractions to decimals: 3/4 = 0.75
+  • Reading measurement scales
+  • Place value in decimal notation
+
+------------------------------------------------------------------------------
+GAME 3: Growing Money Garden (Advanced)
+Route: /game/growing-money-garden
+Topic: Simple & Compound Interest
+------------------------------------------------------------------------------
+
+WHY A MONEY GARDEN?
+  Interest is "money that grows." A garden where trees grow based on
+  interest rates makes the abstract concept of compounding visible.
+  Students SEE the difference between linear growth (simple interest)
+  and exponential growth (compound interest) as trees of different
+  heights growing side by side.
+
+WHAT HAPPENS:
+  Three 3D "money trees" grow based on investment parameters:
+  • Tree 1: Principal (doesn't grow)
+  • Tree 2: Simple Interest (grows linearly)
+  • Tree 3: Compound Interest (grows exponentially)
+  
+  The student sets principal, rate, and time. Trees grow proportionally.
+  Calculation challenges ask students to compute SI and CI amounts.
+
+HOW TO PLAY:
+  1. Tutorial: "Watch your money grow!"
+  2. Set investment parameters: Principal (₹1000), Rate (10%), Time (3 yrs)
+  3. Click "Grow" — watch the three trees grow to different heights
+  4. Read the SI and CI values displayed on each tree
+  5. Answer calculation challenges: "What is the compound interest?"
+  6. Compare SI vs CI for the same parameters
+  7. Complete the quiz
+
+WHAT IT TEACHES:
+  • Simple Interest: SI = (P × R × T) / 100
+  • Compound Interest: CI = P(1 + R/100)^T - P
+  • Why compound interest grows faster over time
+  • Real-world financial literacy
+
+MATHEMATICAL CONNECTION:
+  SI = P × R × T / 100
+  CI = P × (1 + R/100)^T - P
+  Amount = P + Interest
+
+================================================================================
+8. ASSESSMENT SYSTEM (AI-GENERATED QUIZZES)
+================================================================================
+
+After every game, students complete a mandatory 8-question quiz.
+
+QUESTION GENERATION (Database-First System):
+  • 540+ pre-stored questions across all 30 games (20+ per game)
+  • Questions are loaded instantly from the database — no API calls needed
+  • Shuffled randomly each session for variety
+  • Difficulty-matched: easy, medium, and hard tiers per game
+  • Written in plain, conversational English (no raw symbols)
+  • Real-world scenarios (e.g., "A shop offers a 20% discount on a
+    ₹500 item. How much do you save?")
+  • LaTeX formulas used ONLY for complex mathematical expressions
+  • Fallback chain: Database → AI generation → Curated static questions
+
+QUESTION FORMAT:
+  • Multiple choice (4 options)
+  • Each question has an explanation and optional hint
+  • Difficulty adapts to the student's grade and game difficulty level
+
+SCORING:
+  • Stars earned based on accuracy:
+    - 3 stars: ≥ 80% correct
+    - 2 stars: ≥ 60% correct
+    - 1 star: ≥ 40% correct
+    - 0 stars: < 40% correct
+  • Completing with ≥ 50% accuracy unlocks the next difficulty level
+
+================================================================================
+9. GAMIFICATION & REWARDS
+================================================================================
+
+BADGES (17 Total):
+  🌱 Early Bird — Complete onboarding
+  🎯 First Steps — Complete your first game
+  ⭐ Star Collector — Earn 10 stars
+  🌟 Star Master — Earn 50 stars
+  🏆 Champion — Earn 100 stars
+  🔥 On Fire — Maintain a 3-day streak
+  💪 Unstoppable — Maintain a 7-day streak
+  🎯 Sharpshooter — Achieve 90%+ accuracy
+  📐 Trigonometry Pro — Complete all trigonometry games
+  🔢 Algebra Wizard — Complete all algebra games
+  📦 Volume Expert — Complete all volume games
+  🎲 Probability Master — Complete all probability games
+  💰 Finance Guru — Complete all fraction/interest games
+  🧠 Quick Thinker — Answer 5 questions in under 10 seconds each
+  ❤️ Persistent — Complete a game after 3+ attempts
+  🎓 Scholar — Complete all games in any difficulty
+  👑 Perfectionist — Get 100% on any quiz
+
+LEVEL SYSTEM:
+  Level = (Total Stars ÷ 10) + 1
+  Displayed on the student's profile badge.
+
+STREAK TRACKING:
+  Daily login and game completion maintains a streak counter.
+  Visual flame icon shows current streak on the dashboard.
+
+TOKEN ECONOMY:
+  Students earn tokens for correct answers.
+  Tokens are tracked in the performance system.
+
+================================================================================
+10. ACCESSIBILITY & ADHD-FRIENDLY DESIGN
+================================================================================
+
+• Short, focused sessions (each game takes 5-10 minutes)
+• Gentle pulsing animations to maintain attention without overwhelming
+• Motivational messages rotate on the dashboard
+• Step-by-step helpers available when students get stuck
+• Sound effects for correct/incorrect answers (toggleable)
+• Dark mode support for reduced eye strain
+• Large touch targets for mobile users
+• Clear visual progress indicators
+• Minimal text — maximum visual learning
+• Calm, soothing 3D background (CalmWorld component)
+
+================================================================================
+11. TECHNICAL FEATURES (LEETCODE-STYLE)
+================================================================================
+
+LEADERBOARD:
+  • Personal progress dashboard showing all game completions
+  • Chapter-wise progress with star ratings
+  • Overall accuracy percentage and game completion count
+  • Daily streak tracking with visual indicators
+  • Badge collection with unlock progress
+
+DIFFICULTY TIERS:
+  • Easy → Medium → Hard (sequential unlock)
+  • Must score ≥ 50% accuracy to unlock next tier
+  • Each tier generates grade-appropriate AI questions
+
+PROGRESS TRACKING:
+  • Per-game: stars earned, accuracy, attempts, time spent
+  • Per-chapter: games completed, total stars, overall progress
+  • Global: total games, streak, accuracy, level, tokens
+
+ANALYTICS:
+  • Session tracking (start time, duration, tasks completed)
+  • Task-level results (correct/incorrect, response time, hints used)
+  • Performance metrics (EMA accuracy, difficulty progression)
+
+================================================================================
+
+================================================================================
+12. GRADE 12 — ADVANCED CURRICULUM
+================================================================================
+
+Grade 12 extends each chapter with advanced concepts aligned to the NCERT
+syllabus. The same 5-chapter structure applies, with 3 games per chapter
+(Easy → Medium → Advanced), totaling 15 Grade 12 games.
+
+================================================================================
+12a. CHAPTER 1 — TRIGONOMETRY (Grade 12)
+================================================================================
+
+------------------------------------------------------------------------------
+GAME 1: Lighthouse Shadow Tracker (Easy)
+Route: /learn/<game-id>
+Topic: Inverse Trigonometric Functions & Properties
+------------------------------------------------------------------------------
+
+WHY A LIGHTHOUSE?
+  Inverse trig functions answer "what angle produces this ratio?" A
+  lighthouse sweeping its beam across the sea creates measurable shadow
+  angles — students adjust parameters to find the angle when given
+  trigonometric values, experiencing inverse functions physically.
+
+WHAT IT TEACHES:
+  • sin⁻¹, cos⁻¹, tan⁻¹ (arcsin, arccos, arctan) and their domains
+  • Finding angles from known ratios
+  • Properties: sin⁻¹(x) + cos⁻¹(x) = π/2
+  • Real-world applications in navigation and surveying
+
+MATHEMATICAL CONNECTION:
+  θ = sin⁻¹(opposite / hypotenuse)
+  θ = tan⁻¹(opposite / adjacent)
+  Domain restrictions for inverse trig functions
+
+------------------------------------------------------------------------------
+GAME 2: Wave Interference Lab (Medium)
+Route: /learn/<game-id>
+Topic: Trigonometric Identities & Equations
+------------------------------------------------------------------------------
+
+WHY WAVE INTERFERENCE?
+  Trigonometric identities describe how waves combine. When two sound or
+  light waves meet, they interfere — constructive (amplify) or destructive
+  (cancel). Students manipulate wave parameters and see identities like
+  sum-to-product formulas come alive through wave superposition.
+
+WHAT IT TEACHES:
+  • Compound angle formulas: sin(A ± B), cos(A ± B)
+  • Double angle formulas: sin(2A) = 2sinAcosA
+  • Solving trigonometric equations
+  • Wave superposition as a physical model for identities
+
+MATHEMATICAL CONNECTION:
+  sin(A + B) = sinAcosB + cosAsinB
+  cos(A + B) = cosAcosB - sinAsinB
+  sin(2A) = 2sinAcosA
+
+------------------------------------------------------------------------------
+GAME 3: Satellite Navigation Mission (Advanced)
+Route: /learn/<game-id>
+Topic: Applications of Trigonometry in 3D
+------------------------------------------------------------------------------
+
+WHY SATELLITE NAVIGATION?
+  3D trigonometry extends flat-plane concepts into real-world space. GPS
+  satellites use 3D triangulation to pinpoint locations. Students adjust
+  satellite positions in 3D space and see how trigonometric calculations
+  determine distances and angles across three dimensions.
+
+WHAT IT TEACHES:
+  • 3D coordinate trigonometry
+  • Angles of elevation and depression in 3D contexts
+  • Combining multiple trigonometric ratios for spatial problems
+  • Real-world GPS and navigation mathematics
+
+MATHEMATICAL CONNECTION:
+  Distance in 3D: d = √(x² + y² + z²)
+  3D angle: θ = tan⁻¹(height / √(x² + y²))
+
+================================================================================
+12b. CHAPTER 2 — ALGEBRA (Grade 12)
+================================================================================
+
+------------------------------------------------------------------------------
+GAME 1: Matrix Puzzle Grid (Easy)
+Route: /learn/<game-id>
+Topic: Matrices & Determinants
+------------------------------------------------------------------------------
+
+WHY A PUZZLE GRID?
+  Matrices ARE grids. A puzzle grid makes the structure of matrices
+  tangible — students arrange numbers into rows and columns, perform
+  operations visually, and see how matrix multiplication works as
+  a series of dot products displayed in an interactive grid.
+
+WHAT IT TEACHES:
+  • Matrix notation and dimensions (m × n)
+  • Matrix addition, subtraction, and scalar multiplication
+  • Matrix multiplication (row × column dot products)
+  • Determinants of 2×2 and 3×3 matrices
+
+MATHEMATICAL CONNECTION:
+  det(A) = ad - bc (for 2×2 matrix)
+  (AB)ᵢⱼ = Σ aᵢₖ × bₖⱼ
+
+------------------------------------------------------------------------------
+GAME 2: Binomial Blast Simulator (Medium)
+Route: /learn/<game-id>
+Topic: Binomial Theorem & Expansions
+------------------------------------------------------------------------------
+
+WHY "BLAST"?
+  The binomial theorem shows how (a + b)ⁿ expands into multiple terms —
+  like an explosion of terms from a compact expression. Students input
+  values for a, b, and n, and watch terms "blast out" one by one with
+  their binomial coefficients highlighted.
+
+WHAT IT TEACHES:
+  • The Binomial Theorem: (a + b)ⁿ = Σ ⁿCᵣ aⁿ⁻ʳ bʳ
+  • Pascal's Triangle and binomial coefficients (ⁿCᵣ)
+  • Expanding expressions to any power
+  • Finding specific terms in a binomial expansion
+
+MATHEMATICAL CONNECTION:
+  (a + b)ⁿ = Σᵣ₌₀ⁿ ⁿCᵣ × aⁿ⁻ʳ × bʳ
+  ⁿCᵣ = n! / (r! × (n-r)!)
+  General term: Tᵣ₊₁ = ⁿCᵣ × aⁿ⁻ʳ × bʳ
+
+------------------------------------------------------------------------------
+GAME 3: Optimization Arena (Advanced)
+Route: /learn/<game-id>
+Topic: Linear Programming & Optimization
+------------------------------------------------------------------------------
+
+WHY AN ARENA?
+  Optimization is about finding the BEST solution under constraints —
+  like competing in an arena with rules. Students define constraints
+  (inequalities) on a 2D graph, see the feasible region form, and
+  find the optimal point that maximizes or minimizes an objective.
+
+WHAT IT TEACHES:
+  • Formulating linear programming problems
+  • Graphing linear inequalities
+  • Identifying the feasible region
+  • Finding optimal solutions at corner points
+
+MATHEMATICAL CONNECTION:
+  Maximize Z = ax + by
+  Subject to constraints: a₁x + b₁y ≤ c₁, a₂x + b₂y ≤ c₂
+  Optimal solution occurs at a vertex of the feasible region
+
+================================================================================
+12c. CHAPTER 3 — VOLUME & SURFACE AREA (Grade 12)
+================================================================================
+
+------------------------------------------------------------------------------
+GAME 1: Composite Solids Builder (Easy)
+Route: /learn/<game-id>
+Topic: Volume Integration & Revolution Solids
+------------------------------------------------------------------------------
+
+WHY BUILD COMPOSITE SOLIDS?
+  Real-world objects are rarely simple cubes or spheres — they're
+  combinations. Students stack, merge, and subtract 3D shapes to
+  create composite solids, calculating total volume by adding and
+  subtracting individual volumes.
+
+WHAT IT TEACHES:
+  • Volume of composite solids (cone + cylinder, hemisphere + cylinder)
+  • Adding and subtracting volumes of component shapes
+  • Solids of revolution (rotating 2D shapes into 3D)
+  • Integration as a volume-finding tool (introduction)
+
+MATHEMATICAL CONNECTION:
+  V(composite) = V₁ + V₂ - V(overlap)
+  V(revolution) = π ∫ [f(x)]² dx
+
+------------------------------------------------------------------------------
+GAME 2: Architect Blueprint Lab (Medium)
+Route: /learn/<game-id>
+Topic: Surface Area of Complex Composite Solids
+------------------------------------------------------------------------------
+
+WHY BLUEPRINTS?
+  Architects must calculate exact surface areas for material estimation.
+  Students design composite structures from blueprints, then calculate
+  surface area by identifying exposed faces — excluding internal
+  surfaces where shapes join.
+
+WHAT IT TEACHES:
+  • Surface area of composite solids
+  • Identifying exposed vs. internal faces
+  • Subtracting overlapping areas at join points
+  • Real-world material estimation
+
+MATHEMATICAL CONNECTION:
+  SA(composite) = SA₁ + SA₂ - 2 × A(join)
+  SA(cone) = πrl + πr² (curved + base)
+
+------------------------------------------------------------------------------
+GAME 3: Real World Data Explorer (Advanced)
+Route: /learn/<game-id>
+Topic: Optimization of Volume & Surface Area
+------------------------------------------------------------------------------
+
+WHY REAL-WORLD DATA?
+  Optimization problems with volume and surface area appear everywhere:
+  packaging design, tank construction, architectural efficiency. Students
+  use calculus-based optimization to find dimensions that minimize
+  material usage while meeting volume requirements.
+
+WHAT IT TEACHES:
+  • Optimization using derivatives (dV/dx = 0, dSA/dx = 0)
+  • Minimizing surface area for a given volume
+  • Maximizing volume for a given surface area
+  • Real-world packaging and engineering optimization
+
+MATHEMATICAL CONNECTION:
+  For a cylinder: V = πr²h, SA = 2πrh + 2πr²
+  Optimize: dSA/dr = 0 → find optimal r in terms of V
+
+================================================================================
+12d. CHAPTER 4 — PROBABILITY (Grade 12)
+================================================================================
+
+------------------------------------------------------------------------------
+GAME 1: Probability Playground (Easy)
+Route: /learn/<game-id>
+Topic: Conditional Probability & Bayes' Theorem
+------------------------------------------------------------------------------
+
+WHY A PLAYGROUND?
+  Conditional probability is about "given that something happened, what's
+  the new probability?" A playground with interconnected activities makes
+  this intuitive — if a child is already on the swings, what's the
+  probability they'll go to the slide next?
+
+WHAT IT TEACHES:
+  • Conditional probability: P(A|B) = P(A∩B) / P(B)
+  • Bayes' Theorem: P(A|B) = P(B|A) × P(A) / P(B)
+  • Independent vs. dependent events
+  • Tree diagrams for visualizing conditional probability
+
+MATHEMATICAL CONNECTION:
+  P(A|B) = P(A ∩ B) / P(B)
+  Bayes: P(A|B) = P(B|A) × P(A) / P(B)
+
+------------------------------------------------------------------------------
+GAME 2: Binomial Distribution Lab (Medium)
+Route: /learn/<game-id>
+Topic: Binomial & Poisson Distributions
+------------------------------------------------------------------------------
+
+WHY A LAB?
+  Distributions describe the shape of randomness. A laboratory setting
+  lets students run repeated experiments (coin flips, quality checks)
+  and watch the binomial distribution emerge from raw data — seeing
+  the bell curve form in real-time.
+
+WHAT IT TEACHES:
+  • Binomial distribution: P(X = r) = ⁿCᵣ × pʳ × qⁿ⁻ʳ
+  • Mean (np) and variance (npq) of binomial distributions
+  • Poisson distribution for rare events: P(X = r) = e⁻λ × λʳ / r!
+  • When to use binomial vs. Poisson models
+
+MATHEMATICAL CONNECTION:
+  Binomial: P(X = r) = ⁿCᵣ × pʳ × (1-p)ⁿ⁻ʳ
+  Poisson: P(X = r) = e⁻λ × λʳ / r!
+  E(X) = np, Var(X) = npq
+
+------------------------------------------------------------------------------
+GAME 3: Data Analytics Arena (Advanced)
+Route: /learn/<game-id>
+Topic: Random Variables & Expected Values
+------------------------------------------------------------------------------
+
+WHY DATA ANALYTICS?
+  Expected value is the foundation of data-driven decision making.
+  Students analyze datasets, calculate expected values, and make
+  predictions — experiencing how probability distributions drive
+  real-world analytics and business decisions.
+
+WHAT IT TEACHES:
+  • Discrete and continuous random variables
+  • Expected value: E(X) = Σ xᵢP(xᵢ)
+  • Variance: Var(X) = E(X²) - [E(X)]²
+  • Using expected value for decision making
+
+MATHEMATICAL CONNECTION:
+  E(X) = Σ xᵢ × P(xᵢ)
+  Var(X) = E(X²) - [E(X)]²
+  E(aX + b) = aE(X) + b
+
+================================================================================
+12e. CHAPTER 5 — FINANCE & PERCENTAGES (Grade 12)
+================================================================================
+
+------------------------------------------------------------------------------
+GAME 1: Compound Interest Engine (Easy)
+Route: /learn/<game-id>
+Topic: Compound Interest & Exponential Growth
+------------------------------------------------------------------------------
+
+WHY AN ENGINE?
+  Compound interest is an engine that accelerates wealth. Students set
+  principal, rate, compounding frequency, and time, then watch money
+  grow exponentially — comparing monthly vs. quarterly vs. annual
+  compounding to understand the power of frequency.
+
+WHAT IT TEACHES:
+  • Compound interest with different compounding periods
+  • A = P(1 + r/n)^(nt) where n = compounding frequency
+  • The effect of compounding frequency on growth
+  • Continuous compounding: A = Pe^(rt)
+
+MATHEMATICAL CONNECTION:
+  A = P(1 + r/n)^(nt)
+  Continuous: A = Pe^(rt)
+  Effective rate: (1 + r/n)^n - 1
+
+------------------------------------------------------------------------------
+GAME 2: Stock Market Simulator (Medium)
+Route: /learn/<game-id>
+Topic: Percentage Change & Financial Analysis
+------------------------------------------------------------------------------
+
+WHY STOCKS?
+  Stock markets are the most relatable application of percentage change.
+  Students track stock prices, calculate percentage gains/losses,
+  and learn that a 50% loss requires a 100% gain to recover —
+  a powerful lesson in percentage asymmetry.
+
+WHAT IT TEACHES:
+  • Percentage increase and decrease calculations
+  • Successive percentage changes (not additive!)
+  • Percentage profit/loss on investments
+  • The asymmetry of percentage changes
+
+MATHEMATICAL CONNECTION:
+  % Change = (New - Original) / Original × 100
+  Successive: Final = Original × (1 + r₁/100) × (1 + r₂/100)
+  50% loss needs 100% gain to recover
+
+------------------------------------------------------------------------------
+GAME 3: EMI Calculator Lab (Advanced)
+Route: /learn/<game-id>
+Topic: Annuities, EMI & Advanced Finance
+------------------------------------------------------------------------------
+
+WHY EMI?
+  EMI (Equated Monthly Installments) is the most common financial product
+  students will encounter — car loans, home loans, education loans.
+  Understanding how EMI is calculated demystifies debt and empowers
+  informed financial decisions.
+
+WHAT IT TEACHES:
+  • EMI formula: EMI = P × r × (1+r)^n / [(1+r)^n - 1]
+  • Amortization: how payments split between principal and interest
+  • Total cost of a loan (EMI × n) vs. principal
+  • Comparing loan offers with different rates and tenures
+
+MATHEMATICAL CONNECTION:
+  EMI = P × r × (1+r)^n / [(1+r)^n - 1]
+  where P = principal, r = monthly rate, n = total months
+  Total payment = EMI × n
+  Total interest = (EMI × n) - P
+
+================================================================================
+
+Total Games: 30 (15 Grade 11 + 15 Grade 12)
+  • 5 chapters × 3 games × 2 grades = 30 games
+Total Pre-Stored Quiz Questions: 540+ (20+ per game)
+Total Badges: 17
+Supported Grades: 11, 12
+Platform: Web (React + Three.js + Lovable Cloud)
+
+================================================================================
+                     © 2026 Calm Quest — Learn Math, Stay Calm
+================================================================================

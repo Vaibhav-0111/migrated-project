@@ -1,0 +1,535 @@
+================================================================================
+                    🧠 SAESHA — CALM QUEST NEXUS
+              Hackathon Submission Document (Devpost Ready)
+================================================================================
+
+📅 Last Updated: March 2026
+🌐 Live URL: https://calm-quest-nexus.lovable.app
+💻 Built with: Lovable Cloud (Full-Stack AI-Powered Platform)
+
+================================================================================
+📌 ONE-LINE PITCH
+================================================================================
+
+Saesha is an ADHD-friendly, AI-powered interactive math learning platform
+that transforms abstract CBSE Class 11–12 mathematics into calm, game-based
+3D experiences — with adaptive difficulty, real-time narration, and an AI tutor.
+
+================================================================================
+🎯 WHAT IT IS
+================================================================================
+
+Saesha (meaning "meaningful life" in Sanskrit) is a full-stack web application
+designed for neurodivergent learners — especially students with ADHD — who
+struggle with traditional math education. Instead of textbooks and lectures,
+students learn through 15 interactive 3D game scenes across 5 math chapters,
+each with AI-generated quizzes, step-by-step helpers, voice narration, and a
+built-in AI chatbot tutor.
+
+Key Philosophy: "Intuition before formulas"
+→ Students FEEL the math through visual interaction BEFORE encountering
+  symbolic notation or memorization.
+
+================================================================================
+🧩 THE PROBLEM IT SOLVES
+================================================================================
+
+1. 🧠 ADHD & Learning Differences: Traditional math platforms use timers,
+   dense text, and high-pressure formats that trigger anxiety. Saesha uses
+   calm aesthetics, no timers, bite-sized sessions (3–10 min), and gentle
+   animations.
+
+2. 📉 Math Anxiety: Abstract formulas without context lead to disengagement.
+   Every concept is introduced through a real-world scenario (shadows for
+   trigonometry, gift-wrapping for surface area, rescue missions for sine).
+
+3. 📚 One-Size-Fits-All: Traditional platforms don't adapt. Saesha uses
+   Exponential Moving Average (EMA) algorithms to adjust difficulty in
+   real-time based on accuracy, response time, and hint usage.
+
+4. 🎮 Engagement Gap: Dry question banks bore students. Saesha gamifies
+   learning with 17 earnable badges, star ratings, streak tracking, and
+   a leaderboard.
+
+================================================================================
+🏗️ HOW IT WORKS — USER FLOW
+================================================================================
+
+  ┌──────────────┐
+  │  Landing Page │ ← Marketing page with features, curriculum, stats
+  └──────┬───────┘
+         ▼
+  ┌──────────────┐
+  │  Google Auth  │ ← OAuth sign-in (no passwords, instant access)
+  └──────┬───────┘
+         ▼
+  ┌──────────────┐
+  │  Onboarding   │ ← Name, grade (11/12), subject selection
+  └──────┬───────┘
+         ▼
+  ┌──────────────┐
+  │  Dashboard    │ ← Stats, progress, recent activity, quick actions
+  └──────┬───────┘
+         ▼
+  ┌──────────────────────────────────────────┐
+  │  Chapter Select (5 chapters)              │
+  │  Trigonometry │ Algebra │ Volume │ etc.   │
+  └──────┬───────────────────────────────────┘
+         ▼
+  ┌──────────────────────────────────────────┐
+  │  Game Flow (per game):                    │
+  │  1. Tutorial → 2. 3D Animation →         │
+  │  3. Interactive Play → 4. Step Helper →   │
+  │  5. AI Quiz (8 questions)                 │
+  └──────────────────────────────────────────┘
+         ▼
+  ┌──────────────┐
+  │  Rewards      │ ← Badges, stars, tokens, streaks, leaderboard
+  └──────────────┘
+
+================================================================================
+📐 CHAPTERS & GAMES (5 Chapters × 3 Games = 15 Games)
+================================================================================
+
+CHAPTER 1 — TRIGONOMETRY
+  🌿 Game 1: Shadow Garden Challenge (Easy)
+     Route: /game/angle-shadow-garden
+     Concept: tan(θ) = opposite/adjacent via sun shadows
+     Interaction: Slider adjusts sun angle → shadow stretches/shrinks
+
+  🏔️ Game 2: Mountain Rope Rescue (Medium)
+     Route: /game/mountain-rope-rescue
+     Concept: sin(θ) = opposite/hypotenuse via drone rescue
+     Interaction: Adjust drone angle → rope length changes
+
+  🌊 Game 3: Wave Balance Lab (Advanced)
+     Route: /game/wave-balance-lab
+     Concept: sin²θ + cos²θ = 1 (Pythagorean identity)
+     Interaction: Energy bars visualize identity conservation
+
+CHAPTER 2 — ALGEBRA
+  ⚖️ Game 1: Balance Garden (Easy)
+     Route: /game/balance-garden
+     Concept: Solving linear equations as a balance scale
+
+  🏭 Game 2: Equation Factory (Medium)
+     Route: /game/equation-factory
+     Concept: Multi-step equations on conveyor belts
+
+  🌀 Game 3: Pattern Portal World (Advanced)
+     Route: /game/pattern-portal
+     Concept: Sequences, substitution, function rules
+
+CHAPTER 3 — VOLUME & SURFACE AREA
+  🧪 Game 1: Shape Fill Playground (Easy)
+     Route: /game/shape-fill-playground
+     Concept: Volume = "how much fits inside" (cube, cylinder, sphere)
+
+  🎁 Game 2: Wrap the Gift Studio (Medium)
+     Route: /game/wrap-gift-studio
+     Concept: Surface area = "how much wrapping paper"
+
+  🏙️ Game 3: Build & Balance City (Advanced)
+     Route: /game/build-balance-city
+     Concept: Volume vs. surface area optimization
+
+CHAPTER 4 — PROBABILITY
+  🌸 Game 1: Chance Garden (Easy)
+     Route: /game/chance-garden
+     Concept: Basic probability (flower picking scenarios)
+
+  🎰 Game 2: Spinner & Dice Lab (Medium)
+     Route: /game/spinner-dice-lab
+     Concept: Compound probability, sample spaces
+
+  📊 Game 3: Prediction Park (Advanced)
+     Route: /game/prediction-park
+     Concept: Data-driven predictions, expected value
+
+CHAPTER 5 — FRACTIONS, DECIMALS, PERCENTAGES & INTEREST
+  🍕 Game 1: Share & Slice Café (Easy)
+     Route: /game/share-slice-cafe
+     Concept: Fraction visualization via pizza slicing
+
+  🧪 Game 2: Liquid Measure Lab (Medium)
+     Route: /game/liquid-measure-lab
+     Concept: Decimal & fraction conversions with beakers
+
+  💰 Game 3: Growing Money Garden (Advanced)
+     Route: /game/growing-money-garden
+     Concept: Compound interest, percentage growth
+
+================================================================================
+🤖 AI FEATURES
+================================================================================
+
+1. 🧠 AI Question Generation (Serverless Edge Function)
+   - Model: Google Gemini 2.5 Flash (via Lovable AI Gateway)
+   - Generates 8 unique, grade-specific (11 or 12) MCQs per game session
+   - CBSE-aligned, difficulty-aware (easy/medium/hard)
+   - LaTeX-formatted math expressions rendered with KaTeX
+   - Fallback: Curated static question banks if AI unavailable
+
+2. 💬 AI Chatbot Tutor ("Saesha")
+   - Model: Google Gemini 3 Flash Preview (streaming)
+   - Real-time streaming responses via Server-Sent Events (SSE)
+   - Personality: Friendly, encouraging, step-by-step math guidance
+   - LaTeX rendering in chat for inline math formulas
+   - Rate limiting and credit-aware error handling
+
+3. 🔊 Text-to-Speech Narration
+   - API: ElevenLabs Turbo v2.5
+   - Voice: Natural human voice narration for tutorials and explanations
+   - MP3 audio streaming to browser
+
+4. 📈 Adaptive Difficulty Engine
+   - Uses Exponential Moving Average (EMA) algorithm
+   - Tracks: accuracy, response time, hints used
+   - Auto-adjusts difficulty level (1–5) per subject per student
+   - Implemented in the submit-result serverless function
+
+================================================================================
+🛡️ SECURITY FEATURES
+================================================================================
+
+- ✅ Row-Level Security (RLS) on ALL user tables
+- ✅ Server-side badge validation (prevents client-side badge hacking)
+- ✅ JWT authentication on every Edge Function
+- ✅ Service role isolation (never exposed to client)
+- ✅ DELETE policies on all user-scoped tables
+- ✅ Database functions access revoked from public/anon roles
+- ✅ Input validation on all API endpoints
+- ✅ CORS headers on all serverless functions
+
+================================================================================
+🏆 GAMIFICATION SYSTEM
+================================================================================
+
+17 Earnable Badges:
+  🎮 First Steps — Complete your first game
+  🎯 Game Explorer — Complete 5 games
+  🏆 Game Master — Complete 10 games
+  ⭐ Rising Star — Earn your first star
+  🌟 Star Collector — Earn 10 stars
+  ✨ Superstar — Earn 50 stars
+  💯 Perfectionist — Get 100% in any game
+  🎯 Sharpshooter — Maintain 80%+ accuracy
+  📐 Trig Explorer — Complete all Trigonometry games
+  🔢 Algebra Ace — Complete all Algebra games
+  📦 Volume Victor — Complete all Volume games
+  🎲 Probability Pro — Complete all Probability games
+  🍕 Fraction Friend — Complete all Fractions games
+  🔥 On Fire — 3-day streak
+  💪 Week Warrior — 7-day streak
+  🐣 Early Learner — Complete onboarding
+  👑 Math Champion — Complete ALL chapters
+
+Additional:
+  ⭐ Star ratings (1–3 per game per difficulty)
+  🪙 Token rewards (10 tokens per correct answer)
+  📊 Leaderboard (school-wide ranking)
+  🔥 Streak tracking (daily login streaks)
+
+================================================================================
+⚙️ TECH STACK — FULL BREAKDOWN
+================================================================================
+
+CATEGORY          │ TECHNOLOGY              │ PURPOSE
+──────────────────┼─────────────────────────┼────────────────────────────────
+Frontend          │ React 18.3              │ Component-based UI framework
+                  │ TypeScript 5.8          │ Type-safe JavaScript
+                  │ Vite 5.4               │ Ultra-fast build tool & dev server
+                  │ React Router DOM 6.30   │ Client-side routing (SPA)
+                  │                         │
+Styling           │ Tailwind CSS 3.4        │ Utility-first CSS framework
+                  │ tailwindcss-animate     │ Animation utility classes
+                  │ class-variance-authority│ Component variant management (CVA)
+                  │ tailwind-merge          │ Intelligent class merging
+                  │ clsx                    │ Conditional class joining
+                  │                         │
+UI Components     │ shadcn/ui (Radix UI)    │ Accessible, unstyled primitives
+                  │ Lucide React            │ 1000+ SVG icon library
+                  │ Sonner                  │ Toast notification system
+                  │ cmdk                    │ Command palette component
+                  │ Vaul                    │ Drawer component
+                  │ Embla Carousel          │ Touch-friendly carousel
+                  │ React Day Picker        │ Calendar/date picker
+                  │ input-otp               │ OTP input component
+                  │                         │
+Animation         │ Framer Motion 11.18     │ Production-grade React animations
+                  │ React Spring 9.7        │ Physics-based spring animations
+                  │                         │
+3D Graphics       │ Three.js 0.160          │ WebGL 3D rendering engine
+                  │ React Three Fiber 8.18  │ React renderer for Three.js
+                  │ React Three Drei 9.122  │ Three.js helper components
+                  │                         │
+Math Rendering    │ KaTeX 0.16              │ Fast LaTeX math typesetting
+                  │ react-katex 3.1         │ React wrapper for KaTeX
+                  │                         │
+State Management  │ Zustand 4.5             │ Lightweight global state
+                  │ TanStack React Query 5  │ Server state & data fetching
+                  │ React Context           │ Auth & theme state
+                  │                         │
+Forms             │ React Hook Form 7.61    │ Performant form handling
+                  │ Zod 3.25                │ Schema validation
+                  │ @hookform/resolvers     │ Zod-RHF integration
+                  │                         │
+Charts            │ Recharts 2.15           │ Data visualization charts
+                  │                         │
+Audio             │ Howler.js 2.2           │ Cross-browser audio playback
+                  │                         │
+Date Utilities    │ date-fns 3.6            │ Modern date utility library
+                  │                         │
+Backend (Cloud)   │ Lovable Cloud (Supabase)│ Full managed backend platform
+                  │ PostgreSQL              │ Relational database (hosted)
+                  │ Deno Edge Functions     │ Serverless backend logic
+                  │ Row-Level Security      │ Database-level access control
+                  │                         │
+Authentication    │ Google OAuth 2.0        │ Social sign-in (via Lovable Auth)
+                  │ @lovable.dev/cloud-auth │ Managed OAuth SDK
+                  │ JWT Tokens              │ Stateless session management
+                  │                         │
+AI Services       │ Google Gemini 2.5 Flash │ Question generation AI model
+                  │ Google Gemini 3 Flash   │ Chatbot AI model (streaming)
+                  │ Lovable AI Gateway      │ Managed AI API proxy
+                  │ ElevenLabs Turbo v2.5   │ Text-to-speech voice synthesis
+                  │                         │
+Build & Deploy    │ Vite (SWC)              │ Build with Rust-based compiler
+                  │ Lovable Cloud Deploy    │ Auto-deploy on push
+                  │ HTTPS/SSL               │ Automatic TLS certificates
+
+================================================================================
+🗃️ DATABASE SCHEMA (PostgreSQL)
+================================================================================
+
+9 Tables:
+
+  1. profiles — User profile data (name, grade, subjects)
+  2. games — Game definitions (15 games, chapter, concept, grade)
+  3. game_progress — Per-user per-game per-difficulty progress
+  4. questions — AI-generated & static question bank
+  5. sessions — Learning session tracking
+  6. task_results — Individual answer records
+  7. user_performance — EMA-based adaptive performance metrics
+  8. rewards — Earned badges & achievements
+  9. analytics_events — Event logging for learning analytics
+
+Database Functions:
+  - handle_new_user() — Auto-creates profile on signup (trigger)
+  - unlock_next_level() — Auto-unlocks next difficulty on completion (trigger)
+  - unlock_first_games_for_user() — Unlocks all easy levels for new users
+  - increment_session_stats() — Atomic session counter (with ownership check)
+  - generate_questions_for_game() — Placeholder question seeder
+
+================================================================================
+☁️ SERVERLESS ARCHITECTURE (Edge Functions)
+================================================================================
+
+8 Deno Edge Functions deployed on Lovable Cloud:
+
+  1. generate-question — AI question generation (Gemini 2.5 Flash)
+     Input: chapter, gameTitle, difficulty, grade
+     Output: MCQ with question, options, explanation, hint
+
+  2. chat — AI tutor chatbot (Gemini 3 Flash, streaming SSE)
+     Input: message history
+     Output: Streamed AI response with LaTeX math
+
+  3. text-to-speech — Voice narration (ElevenLabs)
+     Input: text, optional voiceId
+     Output: MP3 audio buffer
+
+  4. submit-result — Answer submission + adaptive engine
+     Input: answer data (correct, time, hints)
+     Output: updated difficulty, tokens, streak
+
+  5. award-badge — Server-validated badge awarding
+     Input: badgeId
+     Output: success/already earned/requirements not met
+
+  6. get-games — Fetch game catalog
+  7. get-user-stats — Fetch aggregated user statistics
+  8. update-game-progress — Update game completion data
+  9. seed-questions — Admin: populate question bank
+
+All functions: JWT-authenticated, CORS-enabled, error-handled.
+
+================================================================================
+🗂️ PROJECT STRUCTURE
+================================================================================
+
+src/
+├── components/
+│   ├── 3d/                    # 20+ Three.js 3D scene components
+│   │   ├── AlgebraBlockBuilder, AlgebraLock, AquaTank
+│   │   ├── BinomialBlastSimulator, CalmWorld (background)
+│   │   ├── CompositeSolidsBuilder, DecimalCity
+│   │   ├── EquationBalancer, FactorForest, FloatingShapes
+│   │   ├── FractionPizza, FractionWorldBuilder
+│   │   ├── LighthouseShadow, MountainClimbExplorer
+│   │   ├── OptimizationArena, PercentageQuestArena
+│   │   ├── ProbabilityCards, ProbabilityPlayground
+│   │   ├── RealWorldDataExplorer, ShapeTransformationLab
+│   │   └── TriangleConstructionLab, QuizPanel
+│   │
+│   ├── games/                 # 15 game scene + 15 step-helper components
+│   │   ├── AngleShadowScene, BalanceGardenScene, BuildCityScene
+│   │   ├── ChanceGardenScene, EquationFactoryScene
+│   │   ├── LiquidLabScene, MoneyGardenScene
+│   │   ├── MountainRescueScene, PatternPortalScene
+│   │   ├── PredictionParkScene, ShapeFillScene
+│   │   ├── ShareSliceScene, SpinnerDiceLabScene
+│   │   ├── WaveLabScene, WrapGiftScene
+│   │   ├── *StepHelper.tsx (guided walkthroughs)
+│   │   ├── AIMultiQuestionQuiz, MultiQuestionQuiz
+│   │   ├── GameFeedback, GameQuiz, GameTutorial
+│   │   └── StepWiseHelper
+│   │
+│   ├── animations/            # Framer Motion page transitions
+│   ├── ui/                    # 50+ shadcn/ui components
+│   ├── ChatBot.tsx            # AI tutor floating widget
+│   ├── ConfettiCelebration    # Win animation
+│   ├── MathText.tsx           # KaTeX math renderer
+│   └── VolumeControl.tsx      # Audio controls
+│
+├── pages/                     # 20+ route pages
+│   ├── Home, Auth, Dashboard, Onboarding
+│   ├── TrigonometryChapter, AlgebraChapter, VolumeChapter
+│   ├── ProbabilityChapter, FractionsChapter
+│   ├── Game* (15 game pages)
+│   ├── Achievements, Leaderboard, Settings
+│   └── NotFound
+│
+├── hooks/                     # Custom React hooks
+│   ├── useAuth — Auth state management
+│   ├── useRewards — Badge system
+│   ├── useUserStats — Performance data
+│   ├── useAIQuestions — AI quiz fetching
+│   └── useSoundEffects — Audio feedback
+│
+├── data/
+│   ├── curriculum.ts — Full CBSE curriculum (Physics, Chem, Math, Bio, English)
+│   └── gameQuizzes.ts — Static fallback question banks
+│
+├── store/
+│   └── useAppStore.ts — Zustand global state (settings, onboarding)
+│
+├── contexts/
+│   └── ThemeContext.tsx — Dark/light mode
+│
+└── integrations/
+    ├── supabase/client.ts — Auto-configured DB client
+    └── lovable/ — Cloud integration
+
+supabase/
+├── functions/                 # 8 Deno Edge Functions
+│   ├── generate-question/
+│   ├── chat/
+│   ├── text-to-speech/
+│   ├── submit-result/
+│   ├── award-badge/
+│   ├── get-games/
+│   ├── get-user-stats/
+│   ├── update-game-progress/
+│   └── seed-questions/
+├── migrations/                # SQL schema migrations
+└── config.toml                # Backend configuration
+
+================================================================================
+🌍 DOMAINS & TECHNOLOGIES USED
+================================================================================
+
+DOMAIN                  │ WHAT WE USED
+────────────────────────┼──────────────────────────────────────────
+Web Development         │ React, TypeScript, Vite, HTML5, CSS3
+UI/UX Design            │ Tailwind CSS, shadcn/ui, Framer Motion
+3D Graphics / WebGL     │ Three.js, React Three Fiber, Drei
+Artificial Intelligence │ Google Gemini (question gen + chatbot)
+Speech Synthesis        │ ElevenLabs TTS API
+Database Engineering    │ PostgreSQL, Row-Level Security, Triggers
+Serverless Computing    │ Deno Edge Functions (Lovable Cloud)
+Authentication          │ OAuth 2.0, JWT, Google Sign-In
+Adaptive Learning       │ EMA algorithm, real-time difficulty scaling
+Gamification            │ Badges, streaks, tokens, leaderboards
+Accessibility / ADHD    │ Calm UI, no timers, bite-sized sessions
+Data Visualization      │ Recharts, Canvas 2D
+Math Typesetting        │ KaTeX / LaTeX rendering
+State Management        │ Zustand, React Query, React Context
+Cloud Infrastructure    │ Lovable Cloud (managed hosting + deploy)
+
+================================================================================
+🔑 CODING LANGUAGES & RUNTIMES
+================================================================================
+
+  • TypeScript (primary) — All frontend + Edge Functions
+  • JavaScript (JSX/TSX) — React components
+  • SQL (PostgreSQL) — Database schema, migrations, RLS policies
+  • CSS (Tailwind) — Styling via utility classes
+  • GLSL (via Three.js) — WebGL shader rendering
+  • HTML5 — Document structure, Canvas API
+  • JSON — API communication, configuration
+  • Deno (runtime) — Edge Function execution environment
+  • Node.js (build) — Vite build toolchain
+
+================================================================================
+📊 BY THE NUMBERS
+================================================================================
+
+  • 150+ source files
+  • 20+ React page routes
+  • 50+ UI components (shadcn/ui)
+  • 20+ 3D scene components (Three.js)
+  • 15 interactive learning games
+  • 15 step-by-step helper components
+  • 8 serverless Edge Functions
+  • 9 database tables
+  • 5 database functions + 2 triggers
+  • 17 earnable badges
+  • 5 math chapters (CBSE aligned)
+  • 2 AI models integrated
+  • 1 TTS voice engine
+  • 3 difficulty levels per game
+  • Full dark/light mode support
+
+================================================================================
+♿ ACCESSIBILITY & ADHD-FRIENDLY DESIGN
+================================================================================
+
+  • No timers or countdown pressure
+  • Calm, warm color palette (customizable dark/light)
+  • Bite-sized sessions (3–10 minutes)
+  • Gentle animations (no flashing, no rapid movement)
+  • Step-by-step helpers for every game
+  • Hints available before showing answers
+  • Sound effects with volume control (can be muted)
+  • Clear, large typography
+  • Mobile-responsive design
+  • Keyboard navigable (Radix UI primitives)
+
+================================================================================
+🚀 HOW TO USE / GETTING STARTED
+================================================================================
+
+  1. Visit https://calm-quest-nexus.lovable.app
+  2. Click "Get Started Free"
+  3. Sign in with Google
+  4. Complete onboarding (name, grade, subjects)
+  5. Choose a chapter from the dashboard
+  6. Play games: Tutorial → Animation → Interactive → Quiz
+  7. Earn badges and climb the leaderboard!
+  8. Use the AI chatbot (bottom-right 💬) for help anytime
+
+================================================================================
+📄 LICENSE & CREDITS
+================================================================================
+
+  Built with ❤️ using Lovable Cloud
+  AI powered by Google Gemini via Lovable AI Gateway
+  Voice narration by ElevenLabs
+  Icons by Lucide React
+  UI primitives by Radix UI / shadcn/ui
+  3D engine by Three.js
+
+================================================================================
+                          END OF SUBMISSION DOCUMENT
+================================================================================
